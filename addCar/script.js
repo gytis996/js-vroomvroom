@@ -20,8 +20,8 @@ submitBtn.addEventListener("click", async (e) => {
 
   const nameRegex = /^[a-zA-Z0-9 ]{2,50}$/;
   const yearRegex = /^(19|20)\d{2}-(0[1-9]|1[0-2])$/;
-  const priceRegex = /^\d+(\.\d{1,2})?$/;
-  const locationRegex = /^[a-zA-Z ,.-]{2,50}$/;
+  const priceRegex = /^(?!0+(\.0+)?$)\d+(\.\d{1,2})?$/;
+  const locationRegex = /^[\p{L} ,.'-]{2,50}$/u;
 
   if (!nameRegex.test(car.name)) {
     alert("Please enter a valid car name (letters, numbers, 2-50 chars).");
@@ -34,7 +34,7 @@ submitBtn.addEventListener("click", async (e) => {
   }
 
   if (!priceRegex.test(car.price)) {
-    alert("Price must be a number (up to 2 decimals).");
+    alert("Price must be a number (up to 1 decimals).");
     return;
   }
 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VroomVroom</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo"><a href="../index.html">VroomVroom</a></h1>
+
+      <nav>
+        <ul class="nav-links">
+          <li class="add-link">
+            <a href="../addCar/index.html" class="add-icon">
+              <img src="../Assets/SVG/add.svg" alt="Add listing" />
+              <span>Add+</span>
+            </a>
+          </li>
+
+          <li class="auth-link"><a href="#" class="login-btn">Log in</a></li>
+          <li class="auth-link">
+            <a href="../signupForm/index.html" class="signup-btn">Sign up</a>
+          </li>
+
+          <img class="burger-icon" src="../Assets/SVG/burger.svg" alt="Menu" />
+        </ul>
+      </nav>
+    </header>
+    <div class="page-wrapper">
+      <h2 class="title">Add new car to listing</h2>
+
+      <div class="form">
+        <input type="text" placeholder="Transport name" id="name" />
+        <textarea placeholder="Description" id="description"></textarea>
+        <input type="text" placeholder="Year: e.g. 2020-05" id="year" />
+        <input type="number" placeholder="Price (€)" id="price" />
+        <input type="text" placeholder="Location" id="location" />
+        <input type="url" placeholder="Image URL" id="imgUrl" />
+        <div class="form-buttons">
+          <button id="submit-btn">Submit</button>
+          <button id="back-btn">Back</button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-socials">
+        <h2 class="footer-logo">VroomVroom</h2>
+        <div class="socials-icons">
+          <a href="#"
+            ><img src="../Assets/SVG/instagram.svg" alt="Instagram"
+          /></a>
+          <a href="#"
+            ><img src="../Assets/SVG/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="#"><img src="../Assets/SVG/x.svg" alt="X" /></a>
+        </div>
+      </div>
+
+      <div class="footer-support">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Stay in the loop</h4>
+        <p>Get updates about new products</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Email address" />
+          <button class="btn-signup">Sign Up</button>
+        </form>
+      </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

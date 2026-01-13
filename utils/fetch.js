@@ -36,5 +36,6 @@ export const fetchAllCars = async () => {
     "https://695e18b52556fd22f6774ce4.mockapi.io/api/v1/cars"
   );
   const cars = await response.json();
+  cars.sort((a, b) => Number(a.price) - Number(b.price));
   return cars;
 };
